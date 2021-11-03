@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .container {
+            align-items: center;
+            background: #68788C;
+            box-sizing: border-box;
+            display: flex;
+            height: 110vh;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .container h1 {
+            font-size: 3rem;
+        }
+
+        .new-container:nth-of-type(odd) {
+            background: #D9D9D9;
+        }
+
+        .new-container {
+            align-items: flex-end;
+            background: #979DA6;
+            box-shadow: 0 -3px 0 0 #222;
+            box-sizing: border-box;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .msg-box {
+            text-align: center;
+        }
+
+        .msg-box p {
+            font-size: 1.2rem;
+            opacity: 0;
+            transition: opacity 0.7s;
+            transition-delay: .8s;
+        }
+
+        .msg-box.active p {
+            opacity: 1;
+        }
+
+        .inner-box {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .inner-box p {
+            transform: translateX(-200px);
+            transition: transform 0.7s;
+            transition-delay: .3s;
+            font-size: 1.7rem;
+        }
+
+        .inner-box.active p {
+            display: block;
+            opacity: 1;
+            transform: translateX(0)
+        }
+    </style>
+</head>
+
+<body>
+    <div data-index="0" class="container">
+        <h1>SCROLL </h1>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
